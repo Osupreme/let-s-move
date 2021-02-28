@@ -4,6 +4,7 @@ import { CompletteChallenge } from "../componets/CompleteChalleger";
 import { Countdown } from "../componets/CountDown";
 import { ExperienceBar } from "../componets/ExperenceBar";
 import { Profile } from "../componets/Profile";
+import { CountdownProvider } from '../context/CountdownContext';
 import styles from '../style/peges/Home.module.css';
 
 export default function Home() {
@@ -13,7 +14,8 @@ export default function Home() {
         <title>Start | Move.it</title>
       </Head>
       <ExperienceBar />
-
+      
+      <CountdownProvider>
       <section>
         <div>
           <Profile />
@@ -25,6 +27,7 @@ export default function Home() {
         <ChallengerBox/>
         </div>
       </section>
+      </CountdownProvider>
     </div>
   );
 }
