@@ -7,7 +7,7 @@ export function Profile() {
 
   return (
     <div className={styles.profileContainer}>
-      <img src="http://www.abo-sc.org.br/wp-content/uploads/2017/06/img-perfil-fem1.png" alt="Foto aleatoria" />
+      <img src="https://github.com/Osupreme.png" alt="Foto aleatoria" />
       <div>
         <strong>Guilherme Henrique</strong>
         <p>
