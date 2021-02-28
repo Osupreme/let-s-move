@@ -21,7 +21,7 @@ export const CountdownContext = createContext({} as CountdownContextData)
 export function CountdownProvider({children}: CountdownnProvidersProps){
     const { StartNewChalleger } = useContext(ChallegerContext)
 
-    const [time, setTime] = useState(0.1 * 60);
+    const [time, setTime] = useState(25 * 60);
     const [IsActive, setIsActive] = useState(false);
     const [hasFinished, sethasFinished] = useState(false)
   
@@ -36,7 +36,7 @@ export function CountdownProvider({children}: CountdownnProvidersProps){
       function resetCountdown(){
         clearTimeout(CountDownTimeout);
         setIsActive(false);
-        setTime(0.1 * 60);
+        setTime(25 * 60);
         sethasFinished(false);
       }
     
